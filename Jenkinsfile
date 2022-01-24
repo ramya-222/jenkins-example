@@ -5,8 +5,9 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_5_0') {
+                withMaven(maven : ) {
                     sh 'mvn clean compile'
+                    echo "hello world"
                 }
             }
         }
